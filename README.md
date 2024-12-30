@@ -60,12 +60,19 @@ One regularity that I noticed is that there always seems to be a path that is co
 
 # Scripts
 [`game_state.py`](game_state.py) defines a class for tracking state and implementing logic.
+
 [`pathing.py`](pathing.py) defines pathing algorithms mentioned above.
+
 [`bruteforce.py`](bruteforce.py) is used for finding linear solutions using brute-force approach.
+
 [`utils.py`](utils.py) defines some functions for checking wheter certain path fills all possible world sizes. It also defines a function `priority_map` that creates a 2d array that shows how many cells, originating from different world sizes, would be filled by filling a specific cell in absolute coordinates (non-tiled).
+
 [`tiling_visualization.py`](tiling_visualization.py) is used to show how optimized $O(SlogS)$ approach works by tiling areas between curves $y=S_1/x$ and $y=S_2/x$.
+
 [`plots.py`](plots.py) is used to plot the ratios of used moves over area.
+
 [`visualization.py`](visualization.py) uses pygame and OpenGL to simulate and render definded algorithms.
+
 [`priority_map_visualization.py`](priority_map_visualization.py) uses pygame to render priority map based on a specified path. The simulation is interactive, allowing user to select and deselect specific cells in the absolute world and see how they reflect on priority map. When priority map shows all zeros than all worlds with area less than specified are filled.
 
 
